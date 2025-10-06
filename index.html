@@ -4,6 +4,20 @@
   <meta charset="UTF-8">
   <!-- Add this in <head> of index.html -->
     <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <script>
+    window.MathJax = {
+      tex: {
+        inlineMath: [['$', '$'], ['\\(', '\\)']],
+        displayMath: [['$$', '$$'], ['\\[', '\\]']],
+        processEscapes: true
+      },
+      svg: {
+        fontCache: 'global'
+      }
+    };
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+
 
     <style>
     body {
@@ -18,21 +32,34 @@
 <body class="home">
   <header>
     <div class="container">
-    <h1 style="font-variant: small-caps">Niklas E. Önne</h1>
-    <nav style="text-align: center">
-      <a href="index.html" style="color: #ffb600">Home</a> |
-      <a href="research/index.html">Research</a> |
-      <a href="tikz/index.html">Ti<i>k</i>Z</a> |
-      <a href="astro/index.html">Astrophotography</a>
-    </nav>
+    <a href="index.html" style="color: white; text-decoration: none; width: 500px;"><h1 style="font-variant: small-caps; text-align: left;">Niklas E. Önne</h1></a>
+    <ul>
+      <nav style="text-align: center;">
+        <a href="index.html" style="color: #ffb600">Home</a> |
+        <a href="research/index.html">Research</a> |
+        <a href="tikz/index.html">Ti<i>k</i>Z</a> |
+        <a href="astro/index.html">Astrophotography</a>
+      </nav>
+    </ul>
+    <div style="width: 500px"></div>
     </div>
   </header>
 
+  <div class="full-width-image">
+    <img src="images/background.jpg" style="width: 100%">
+  </div>
+
   <main>
-    <!-- <div> -->
+    <div class="row">
+      <div class="column" style="width: 40%">
         <h2>About Me</h2>
-    <p>Hello! I’m Niklas, a PhD student in theoretical quantum physics at the <a href="https://www.nordita.org" target="_blank" style="font-variant: small-caps">Nordic Institiute for Theoretical Physics</a>.</p>
-    <!-- </div> -->
+        <p>Hello! I’m Niklas, a PhD student in theoretical quantum physics at the <a href="https://www.nordita.org" target="_blank" style="font-variant: small-caps">Nordic Institiute for Theoretical Physics</a>.</p>
+        <p>This webpage is a tool for me to organize and share projects of mine, both professional and hobby-projects. Here you'll find my research papers, figures and posters, as well as some astrophotos I've taken over the years.</p>
+      </div>
+      <div class="column" style="flex: 30%">
+        <img src="images/pp-512.png" style="width: 300pt">
+      </div>
+    </div>
   </main>
 
   <footer>

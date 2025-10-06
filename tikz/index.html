@@ -2,23 +2,52 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>TikZ Figures</title>
-  <link rel="stylesheet" href="../style.css"> <!-- re-use main style -->
+  <!-- Add this in <head> of index.html -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <script>
+    window.MathJax = {
+      tex: {
+        inlineMath: [['$', '$'], ['\\(', '\\)']],
+        displayMath: [['$$', '$$'], ['\\[', '\\]']],
+        processEscapes: true
+      },
+      svg: {
+        fontCache: 'global'
+      }
+    };
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+
+    <style>
+    body {
+        font-family: "Computer Modern", sans-serif;
+    }
+    </style>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Niklas E. Önne</title>
+  <link rel="icon" type="image/x-icon" href="/images/favicon.png">
+  <link rel="stylesheet" href="/style.css">
 </head>
-<body>
+<body class="home">
   <header>
-    <!-- <h1>TikZ Figures & Animations</h1> -->
-    <nav>
-      <a href="/index.html">Home</a> |
-      <a href="/research/index.html">Research</a> |
-      <a href="/tikz/index.html", style="color: #ffb600">Ti<i>k</i>Z</a> |
-      <a href="/astro/index.html">Astrophotography</a>
-    </nav>
+    <div class="container">
+    <a href="/index.html" style="color: white; text-decoration: none; width: 500px;"><h1 style="font-variant: small-caps; text-align: left;">Niklas E. Önne</h1></a>
+    <ul>
+      <nav style="text-align: center;">
+        <a href="/index.html">Home</a> |
+        <a href="/research/index.html">Research</a> |
+        <a href="/tikz/index.html" style="color: #ffb600">Ti<i>k</i>Z</a> |
+        <a href="/astro/index.html">Astrophotography</a>
+      </nav>
+    </ul>
+    <div style="width: 500px"></div>
+    </div>
   </header>
 
   <main>
+    <div style="height: 50px"></div>
     <h2>Gallery</h2>
-    <p>Here are some figures I’ve made using TikZ. Click to enlarge.</p>
+    <p>Here are some figures I’ve made using Ti<i>k</i>Z.</p>
 
     <div class="gallery">
       <!-- Example SVG -->
@@ -36,7 +65,8 @@
   </main>
 
   <footer>
-    <p>&copy; 2025 Your Name</p>
+    <p>&copy; 2025 Niklas E. Önne</p>
   </footer>
 </body>
 </html>
+
