@@ -46,7 +46,7 @@ header {
 
 footer {
   /* background: rgba(0,0,0, 0.4); 71, 71, 71, */
-  background: url("images/curved_spacetime.svg");
+  background: white;
   background-size: 135%;
   background-position-x: 70%;
   text-align: center;
@@ -67,6 +67,9 @@ nav a {
   font-variant: small-caps;
 }
 
+nav a.active {
+  color: #ffb600;
+}
 
 
 .container {
@@ -87,8 +90,9 @@ nav a {
 main {
   padding: 40px;
   flex: 1;
-  /*color: white;
-  mix-blend-mode: difference;*/
+  margin-top: 500px; /* same as background height */
+  position: relative;
+  background: white;
 }
 
 
@@ -108,7 +112,8 @@ main {
 }
 
 .column {
-  flex: 50%;
+  /* flex: 50%; */
+  display: center;
   flex-direction: column;
   justify-content: space-around;
 }
@@ -121,4 +126,62 @@ main {
   left: 50%;
   -ms-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
+}
+
+.full-width-image {
+  position: fixed;   /* stays in place while scrolling */
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 500px;     /* set the height of your background */
+  background-size: cover;
+  background-position: center;
+  z-index: -1;  
+}
+
+.full-width-image .desc {
+  display: flex;
+  align-items: center;
+  font-variant: small-caps;
+  font-size: xx-large;
+  justify-content: center;
+  height: 500px;
+  /* border: 2px solid greenyellow;
+  color: greenyellow; */
+  z-index: 1;
+}
+
+.hover-image>img {
+  border-radius: 50%;
+  filter: grayscale(100%);
+}
+
+.hover-image>img:hover {
+  filter: none;
+}
+
+div.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+}
+
+div.gallery-item {
+  margin: 5px;
+  border: 2px solid #ccc;
+  width: 180px;
+}
+
+div.gallery-item:hover {
+  border: 2px solid #ffb600;
+}
+
+div.gallery-item img {
+  width: 100%;
+  height: auto;
+}
+
+div.gallery-item div.desc {
+  padding: 15px;
+  text-align: center;
 }

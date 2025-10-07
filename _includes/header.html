@@ -1,0 +1,19 @@
+<!-- _includes/header.html -->
+<header>
+   <div class="container">
+    <a href="index.html" style="color: white; text-decoration: none; width: 220px;"><h2 style="font-variant: small-caps; text-align: left;">{{ site.title }}</h2></a>
+    <ul>
+      <nav style="text-align: center;">
+        <a href="{{'index.html' | relative_url}}" class="{% if page.url == '/' %}active{% endif %}">Home</a> |
+        <a href="{{'research/index.html' | relative_url}}" class="{% if page.url == '/research/' %}active{% endif %}">Research</a> |
+        <a href="{{'tikz/index.html' | relative_url}}" class="{% if page.url == '/tikz/' %}active{% endif %}">Ti<i>k</i>Z</a> |
+        <a href="{{'astro/index.html' | relative_url}}" class="{% if page.url == '/astro/' %}active{% endif %}">Astrophotography</a>
+      </nav>
+    </ul>
+    <div style="width: 220px"></div>
+    </div>
+  <!-- <nav>
+    <a href="{{ '/' | relative_url }}">Home</a>
+    <a href="{{ '/about/' | relative_url }}">About</a>
+  </nav> -->
+</header>

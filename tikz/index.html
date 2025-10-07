@@ -1,72 +1,37 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <!-- Add this in <head> of index.html -->
-    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
-    <script>
-    window.MathJax = {
-      tex: {
-        inlineMath: [['$', '$'], ['\\(', '\\)']],
-        displayMath: [['$$', '$$'], ['\\[', '\\]']],
-        processEscapes: true
-      },
-      svg: {
-        fontCache: 'global'
-      }
-    };
-    </script>
-    <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+---
+layout: default
+title: TikZ
+---
 
-    <style>
-    body {
-        font-family: "Computer Modern", sans-serif;
-    }
-    </style>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Niklas E. Önne</title>
-  <link rel="icon" type="image/x-icon" href="/images/favicon.png">
-  <link rel="stylesheet" href="/style.css">
-</head>
-<body class="home">
-  <header>
-    <div class="container">
-    <a href="/index.html" style="color: white; text-decoration: none; width: 500px;"><h1 style="font-variant: small-caps; text-align: left;">Niklas E. Önne</h1></a>
-    <ul>
-      <nav style="text-align: center;">
-        <a href="/index.html">Home</a> |
-        <a href="/research/index.html">Research</a> |
-        <a href="/tikz/index.html" style="color: #ffb600">Ti<i>k</i>Z</a> |
-        <a href="/astro/index.html">Astrophotography</a>
-      </nav>
-    </ul>
-    <div style="width: 500px"></div>
+
+<div class="full-width-image" style="background-image: url('/assets/images/background.jpg');">
+  <div class="desc" style="color: #ffb600">
+    <h1><a style="font-variant: normal; font-weight: normal">Ti<i>k</i>Z</a> Gallery</h1>
+  </div>
+</div>
+<!-- <div style="height: 50px"></div> -->
+<!-- <h2>Gallery</h2> -->
+<p>Here are some figures I’ve made using Ti<i>k</i>Z.</p>
+
+<div class="gallery">
+  <!-- Example SVG -->
+  <div class="gallery-item">
+    <img src="figures/H_0.svg" alt="Hadamard gate on the Bloch sphere">
+    <div class="desc">
+      Hadamard gate on the Bloch sphere.
     </div>
-  </header>
+  </div>
+  <div class="gallery-item">
+    <img src="figures/H_0.svg" alt="The same Hadamard gate.">
+  </div>
+  <!-- <figure>
+    <img src="figures/H_0.svg" alt="Hadamard gate on the Bloch sphere">
+    <figcaption>Figure 1: A simple TikZ diagram</figcaption>
+  </figure> -->
 
-  <main>
-    <div style="height: 50px"></div>
-    <h2>Gallery</h2>
-    <p>Here are some figures I’ve made using Ti<i>k</i>Z.</p>
-
-    <div class="gallery">
-      <!-- Example SVG -->
-      <figure>
-        <img src="figures/H_0.svg" alt="Hadamard gate on the Bloch sphere">
-        <figcaption>Figure 1: A simple TikZ diagram</figcaption>
-      </figure>
-
-      <!-- Example PNG fallback -->
-      <figure>
-        <img src="figures/H_0.svg" alt="The same Hadamard gate.">
-        <figcaption>Figure 2: Another TikZ illustration</figcaption>
-      </figure>
-    </div>
-  </main>
-
-  <footer>
-    <p>&copy; 2025 Niklas E. Önne</p>
-  </footer>
-</body>
-</html>
-
+  <!-- Example PNG fallback -->
+  <!-- <figure>
+    <img src="figures/H_0.svg" alt="The same Hadamard gate.">
+    <figcaption>Figure 2: Another TikZ illustration</figcaption>
+  </figure> -->
+</div>
