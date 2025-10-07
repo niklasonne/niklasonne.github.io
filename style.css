@@ -54,6 +54,11 @@ footer {
   /* margin-top: 2em; */
 }
 
+nav {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  align-items: center;
+}
 
 nav a:hover {
   text-decoration: underline;
@@ -61,10 +66,15 @@ nav a:hover {
 
 nav a {
   color: #fff;
-  margin-right: 1em;
-  margin-left: 1em;
+  /* border: 1px solid pink; */
+  padding-right: 1em;
+  padding-left: 1em;
+  height: 40px;
   text-decoration: none;
+  text-align: center;
   font-variant: small-caps;
+  display: grid;
+  align-items: center;
 }
 
 nav a.active {
@@ -73,18 +83,27 @@ nav a.active {
 
 
 .container {
+  display: grid;
+  grid-template-columns: 1fr 1.5fr 1fr;
+  /* border: 2px solid cyan; */
   display: flex;
-  flex-direction: row;
   align-items: center;
   justify-content: space-between;
   position: fixed;   /* sticks to viewport */
   /* border: 1px solid greenyellow; */
-  padding-left: 40px;
-  padding-right: 40px;
+  /* padding-left: 40px;
+  padding-right: 40px; */
   width: 100%;       /* full width */
   background: rgba(0, 0, 0, 0.6); /* semi-transparent dark */
   color: white;
   z-index: 1000;     /* keeps it above other elements */
+}
+
+.container .item {
+  /* border: 2px solid greenyellow; */
+  height: 100px;
+  display: flex;
+  align-items: center;
 }
 
 main {
