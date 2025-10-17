@@ -2,7 +2,85 @@
 layout: default
 title: Astrophotography
 ---
+<style>
+  main {
+    background: #171B21;
+  }
 
-<div class="center">
-  This page is on my to-do list.
+  div.grid .item {
+    padding-left: 0px;
+    padding-right: 0px;
+    background: transparent;
+    border: none;
+    box-shadow: 0 4px 8px 0 rgba(255, 255, 255, 0.2), 0 6px 40px 0 rgba(255, 255, 255, 0.19);
+  }
+  div.grid .item img {
+    width: 100%;
+    border: none;
+  }
+  
+  div.grid .item .desc {
+    text-align: center;
+    color: white;
+    padding: 15px;
+  }
+</style>
+
+
+<div class="full-width-image" style="background-image: url('/assets/images/background.jpg')"></div>
+<p>High resolution versions of some of the photos can be found on my <a href="https://www.astrobin.com/users/astroniklas/" target="_blank">astrobin</a>.</p>
+
+<div class="full-width-box" style="background: white; color: #171B21">
+  <div style="display: grid; grid-template-columns: 2fr 1fr 1fr; gap: 30px; padding: 20px;">
+    <div>
+      <h1>My gear</h1>
+      <p>I am using a Newtonian reflector telescope with an aperture of 200mm and a focal length of 1000mm for an F-ratio of 5. The pictures are taken with an old Canon DSLR camera that I astromodded myself. This, mounted on my trustworthy motordriven equatorial mount allows me to take pictures of deep sky objects such as galaxies and nebulas.</p>
+      <ul>
+        <li><b>Telescope:</b> Skywatcher Explorer 200PDS</li>
+        <li><b>Mount:</b> Skywatcher HEq5 GoTo</li>
+        <li><b>Camera:</b> Canon EOS 550D (astromodified)</li>
+      </ul>
+    </div>
+
+    <div>
+      <img src="/assets/images/niklas_and_orion.jpg" style="width: 100%">
+    </div>
+
+    <div><img src="images/Niklas_under_vintergatan_La_Palma.JPG" style="width: 100%; justify-content: center;"></div>
+  </div>
 </div>
+
+<div style="height: 50px"></div>
+
+<div class="grid">
+  
+  
+  <div class="item">
+    <img src="images/M31.jpg" style="height: 300px">
+    <div class="desc">
+      <a style="color: #ffb600; font-weight: bold;">M31</a>, the Andromeda galaxy.
+    </div>
+  </div>
+
+
+  <div class="item">
+    <img src="images/M51.jpg" style="height: 300px">
+    <div class="desc">
+      <a style="color: #ffb600; font-weight: bold;">M51</a>, the Whirlpool galaxy.
+    </div>
+  </div>
+
+  
+  <div class="item">
+    <img src="images/IC1805_heart_nebula.jpg" style="height: 300px">
+    <div class="desc">
+      <a style="color: #ffb600; font-weight: bold;">IC1805</a>, the Heart nebula.
+    </div>
+  </div>
+
+
+</div>
+
+<!-- <div class="center">
+  This page is on my to-do list.
+</div> -->

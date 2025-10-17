@@ -2,19 +2,85 @@
 layout: default
 title: TikZ
 ---
+<style>
+  main {
+    color: black;
+  }
+
+  header {
+    background: rgba(0, 0, 0, 0.4);
+  }
+
+  footer {
+    background-color: white;
+  }
 
 
-<div class="full-width-image" style="background-image: url('/assets/images/background.jpg');">
+  div.grid .item img {
+    border: none;
+    width: 100%;
+  }
+</style>
+
+<div class="full-width-image" style="background-image: url('figures/cavendish.svg'); height: auto; background-color: #171B21;">
   <div class="desc" style="color: #ffb600">
-    <h1><a style="font-variant: normal; font-weight: normal">Ti<i>k</i>Z</a> Gallery</h1>
+    <!-- <h1><a style="font-variant: normal; font-weight: normal">Ti<i>k</i>Z</a> Gallery</h1> -->
   </div>
 </div>
 <!-- <div style="height: 50px"></div> -->
 <!-- <h2>Gallery</h2> -->
-<p>Here are some figures I’ve made using Ti<i>k</i>Z.</p>
+<p>$\text{Ti}k\text{Z}$ is a $\LaTeX$ package for creating figures and diagrams that I've come to love over the years. Here are some of my favorite things I’ve made with this package. Feel free to ask for the source code, I'm happy to share!</p>
 
-<div class="gallery">
-  <!-- Example SVG -->
+<div class="grid">
+  <div class="item">
+    <!-- <div class="title">Hadamard gate on the Bloch sphere</div> -->
+    <img src="figures/H_0.svg" style="width: 70%; height: 300px;">
+    <p>Animation of the Hadamard gate on the Bloch sphere.</p>
+  </div>
+
+
+
+  <div class="item">
+    <div style="height: 300px">
+      <img src="figures/cavendish.svg" style="object-position: 50% 0;">
+    </div>
+    <p>Cavendish experiment setup to measure gravity.</p>
+  </div>
+
+
+
+  <div class="item">
+    <div style="height: 300px;">
+      <img src="figures/atom_in_laser_trap.svg" style="width: 80%; transform: translateY(30%);">
+    </div>
+    <p>
+      Atom in an optical cavity.
+    </p>
+  </div>
+
+
+  <div class="item">
+    <div style="height: 300px;">
+      <img src="figures/clock.svg" style="width: 260px; transform: translateY(20px)">
+    </div>
+    <p>
+      An analog clock. Inspired by the Hamilton Khaki Field Automatic watch.
+    </p>
+  </div>
+
+
+  <div class="item">
+    <div style="height: 300px;">
+      <img src="figures/light_wave.svg" style="width: 100%; transform: translateY(25%)">
+    </div>
+    <p>
+      A linearly polarized electromagnetic wave.
+    </p>
+  </div>
+
+</div>
+
+<!-- <div class="gallery">
   <div class="gallery-item">
     <img src="figures/H_0.svg" alt="Hadamard gate on the Bloch sphere">
     <div class="desc">
@@ -24,14 +90,4 @@ title: TikZ
   <div class="gallery-item">
     <img src="figures/H_0.svg" alt="The same Hadamard gate.">
   </div>
-  <!-- <figure>
-    <img src="figures/H_0.svg" alt="Hadamard gate on the Bloch sphere">
-    <figcaption>Figure 1: A simple TikZ diagram</figcaption>
-  </figure> -->
-
-  <!-- Example PNG fallback -->
-  <!-- <figure>
-    <img src="figures/H_0.svg" alt="The same Hadamard gate.">
-    <figcaption>Figure 2: Another TikZ illustration</figcaption>
-  </figure> -->
-</div>
+</div> -->

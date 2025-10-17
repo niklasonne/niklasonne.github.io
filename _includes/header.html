@@ -1,7 +1,7 @@
 <!-- _includes/header.html -->
 <header>
-  <div class="container">
-    <a href="/index.html" class="item" style="width: 220px; color: white; text-decoration: none; padding-left: 40px"><h2 style="font-variant: small-caps; text-align: left;">{{ site.title }}</h2></a>
+  <div class="container" style="background: transparent">
+    <a href="/" class="item" style="width: 220px; color: white; text-decoration: none; padding-left: 40px"><h2 style="font-variant: small-caps; text-align: left;"></h2></a> <!-- {{ site.title }} -->
     <nav class="item" style="grid-column: 2;">
       <a href="{{'index.html' | relative_url}}" class="{% if page.url == '/' %}active{% endif %}">Home</a>
       <a href="{{'research/index.html' | relative_url}}" class="{% if page.url == '/research/' %}active{% endif %}">Research</a>

@@ -19,8 +19,36 @@
   font-style: italic;
 }
 
+
+
+
+
+@font-face {
+  font-family: "Ubuntu";
+  src: url("assets/fonts/Ubuntu-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Ubuntu";
+  src: url("assets/fonts/Ubuntu-Bold.ttf") format("truetype");
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Ubuntu";
+  src: url("assets/fonts/Ubuntu-Italic.ttf") format("truetype");
+  font-weight: normal;
+  font-style: italic;
+}
+
+
+
+
 html, body {
-  font-family: 'Computer Modern', serif;
+  font-family: 'Ubuntu', serif;
   color: black;
   margin: 0;
   padding: 0;
@@ -46,7 +74,7 @@ header {
 
 footer {
   /* background: rgba(0,0,0, 0.4); 71, 71, 71, */
-  background: white;
+  background: #171B21;
   background-size: 135%;
   background-position-x: 70%;
   text-align: center;
@@ -77,9 +105,12 @@ nav a {
   align-items: center;
 }
 
+
 nav a.active {
   color: #ffb600;
 }
+
+
 
 
 .container {
@@ -94,7 +125,6 @@ nav a.active {
   /* padding-left: 40px;
   padding-right: 40px; */
   width: 100%;       /* full width */
-  background: rgba(0, 0, 0, 0.6); /* semi-transparent dark */
   color: white;
   z-index: 1000;     /* keeps it above other elements */
 }
@@ -112,8 +142,20 @@ main {
   margin-top: 500px; /* same as background height */
   position: relative;
   background: white;
+  /* background: #171B21; */
+  color: #ACC8E5;
 }
 
+
+a:link {
+  /* color: green; */
+  text-decoration: none;
+}
+
+a:visited {
+  color: white;
+  text-decoration: none;
+}
 
 /* .column {
   float: left;
@@ -154,13 +196,15 @@ main {
   width: 100%;
   height: 500px;     /* set the height of your background */
   background-size: cover;
+  background-color: #171B21;
   background-position: center;
   z-index: -1;  
 }
 
 .full-width-image .desc {
-  display: flex;
+  /* display: flex; */
   align-items: center;
+  text-align: center;
   font-variant: small-caps;
   font-size: xx-large;
   justify-content: center;
@@ -168,6 +212,12 @@ main {
   /* border: 2px solid greenyellow;
   color: greenyellow; */
   z-index: 1;
+}
+
+.hover-image {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .hover-image>img {
@@ -203,4 +253,55 @@ div.gallery-item img {
 div.gallery-item div.desc {
   padding: 15px;
   text-align: center;
+}
+
+
+div.grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  align-items: top;
+  gap: 30px;
+}
+
+div.grid .item {
+  margin: 0px;
+  padding-left: 15px;
+  background: white;
+  color: #171B21;
+  padding-right: 15px;
+  border: 2px solid #ccc;
+  /* max-height: 200px; */
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.grid .item:hover {
+  border: 2px solid #ffb600;
+  box-shadow: 0 4px 8px 0 rgba(255, 182, 0, 0.2), 0 6px 20px 0 rgba(255, 182, 0, 0.19);
+}
+
+.grid .item img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  /* align-items: center;
+  justify-content: center; */
+  border: 2px solid #ccc;
+  width: calc(100% - 15px);
+  object-fit: cover;
+  /* padding: auto; */
+  /* max-height: 300px; */
+}
+
+div.grid .item .title {
+  text-align: center;
+  font-weight: bold;
+  padding: 15px;
+}
+
+
+.full-width-box {
+  border: 2px solid #ccc;
+  /* box-shadow: 10px 10px 5px 2px gray; */
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  padding: 15px;
 }
