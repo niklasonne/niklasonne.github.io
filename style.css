@@ -126,7 +126,7 @@ nav a.active {
   padding-right: 40px; */
   width: 100%;       /* full width */
   color: white;
-  z-index: 1000;     /* keeps it above other elements */
+  z-index: 100;     /* keeps it above other elements */
 }
 
 .container .item {
